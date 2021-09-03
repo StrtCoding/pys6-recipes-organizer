@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddEditWindow</class>
+ <widget class="QWidget" name="AddEditWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1020</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1020</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-radius: 5px</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="central_widget_frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="shadow_layout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="background_frame">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(245, 240, 225);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QFrame" name="top_bar_frame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #1e3d59;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="title_label">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white;</string>
+              </property>
+              <property name="text">
+               <string>Recipes Organizer</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="buttons_holder_frame">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>113</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QToolButton" name="minimize_button">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>0</y>
+                 <width>22</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../assets/icons/minimize-window.png</normaloff>../assets/icons/minimize-window.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QToolButton" name="restore_button">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>0</y>
+                 <width>22</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../assets/icons/restore-window.png</normaloff>../assets/icons/restore-window.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QToolButton" name="maximize_button">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>0</y>
+                 <width>22</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../assets/icons/maximize-window.png</normaloff>../assets/icons/maximize-window.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QToolButton" name="close_button">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>0</y>
+                 <width>22</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../assets/icons/close-window.png</normaloff>../assets/icons/close-window.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>25</width>
+                 <height>25</height>
+                </size>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="content_frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>49</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Titulo</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="title_line_edit">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>291</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: white;
+border: 1px solid #ff6e40;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>61</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Categoria</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="category_combo_box">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>291</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: white;
+border: 1px solid #ff6e40;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Selecciones una Categoria</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="url_line_edit">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>140</y>
+              <width>291</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: white;
+border: 1px solid #ff6e40;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>120</y>
+              <width>101</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>URL de una Guia</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="budget_line_edit">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>200</y>
+              <width>291</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: white;
+border: 1px solid #ff6e40;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>180</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>presupuesto</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="image_path_line_edit">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>260</y>
+              <width>221</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: white;
+border: 1px solid #ff6e40;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>240</y>
+              <width>131</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Seleccione una imagen</string>
+            </property>
+           </widget>
+           <widget class="QToolButton" name="select_img_button">
+            <property name="geometry">
+             <rect>
+              <x>240</x>
+              <y>260</y>
+              <width>31</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QToolButton::hover {background-color : #ff6e40}</string>
+            </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/open-file.png</normaloff>../assets/icons/open-file.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="add_edit_button">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>320</y>
+              <width>201</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton { 
+background-color : #ff6e40;
+color: white;
+}
+QPushButton::hover {background-color : #ffc13b};</string>
+            </property>
+            <property name="text">
+             <string>text</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/plus.png</normaloff>../assets/icons/plus.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="cancel_button">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>360</y>
+              <width>201</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton { 
+background-color : #6b7b8c;
+color: white;
+}
+QPushButton::hover {background-color : #ffc13b};</string>
+            </property>
+            <property name="text">
+             <string>Cancelar</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/cancel.png</normaloff>../assets/icons/cancel.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>10</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Ingredientes</string>
+            </property>
+           </widget>
+           <widget class="QPlainTextEdit" name="ingredients_text_edit">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>30</y>
+              <width>311</width>
+              <height>371</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid #ff6e40;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>640</x>
+              <y>10</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Pasos de realizacion</string>
+            </property>
+           </widget>
+           <widget class="QPlainTextEdit" name="directions_text_edit">
+            <property name="geometry">
+             <rect>
+              <x>640</x>
+              <y>30</y>
+              <width>311</width>
+              <height>371</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid #ff6e40;</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
